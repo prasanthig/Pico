@@ -1,0 +1,171 @@
+//Global variables
+$background-dark: #343a40!important;
+$background-light: #fafafa;
+$background-main: #ffffff;
+$text-dark: #003569;
+$text-copyright: #999;
+$border: 1px ridge;
+$font-main: 'Roboto', sans-serif;
+$carousel-height: 320px;
+$carousel-width: 100%;
+
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+    font-family: $font-main;
+    background-color: $background-light;
+}
+
+.copyright {
+    color: $text-copyright;
+    font-size: .9em;
+    text-align: right;
+}
+
+.signature {
+    color: $text-copyright;
+    font-size: .9em;
+    text-align: center;
+}
+
+.text-dark {
+    color: dark-text;
+    font-size: .9em;
+}
+
+.background-main {
+    color: $background-dark;
+}
+
+.background-color {
+    background-color: $background-main;
+}
+
+.border-sides {
+    border: $border;
+}
+
+.row-header {
+    margin: 0px;
+    padding: 0px 0px; 
+}
+
+.row-content {
+    margin: 0px;
+    padding: 50px 0px;
+    border-bottom: $border;
+    min-height: 400px;
+    align-items: center;
+}
+    
+.footer {
+margin: 0px;
+padding: 40px 0px;
+}
+
+.body-margin {
+    margin-top: 60px;
+}
+
+.jumbotron {
+margin: 0px;
+padding: 75px 30px;
+border-bottom: $border;
+}
+
+.modal {
+    max-width: 100%;
+
+    .modal-dialog {
+        top: 15%;
+    }
+}
+
+.modal-header {
+    background-color: $background-dark;
+    color: floralwhite;
+
+    button {
+        color: floralwhite;
+    }
+}
+
+.modal-body, .modal-footer {
+    background-color: $background-light;
+}
+
+.modal-format {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+.block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+
+    .card-title {
+        text-align: center;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        margin: 15px 2px;
+    }
+    
+    .card-text {
+        margin: 0px 2px 15px 2px;
+    }
+}
+
+.card-deck {
+    margin-bottom: 25px;
+}
+
+.photo-size {
+    height: 400px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.carousel {
+    background: $background-dark;
+
+    
+    .carousel-item {
+        height: $carousel-height;
+        
+        img {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            min-height: $carousel-height;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            width: 500px;
+            top: 25%;
+            left: 39%;
+        }
+    }
+}
+
+#pauseButton {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    outline: none;
+}

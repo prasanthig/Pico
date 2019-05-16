@@ -1,0 +1,14 @@
+{
+    "vs": {
+        "awscloudformation": {
+            "AuthRoleName": "projectpico-vs-20190512065122-authRole",
+            "UnauthRoleArn": "arn:aws:iam::311640215412:role/projectpico-vs-20190512065122-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::311640215412:role/projectpico-vs-20190512065122-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "projectpico-vs-20190512065122-deployment",
+            "UnauthRoleName": "projectpico-vs-20190512065122-unauthRole",
+            "StackName": "projectpico-vs-20190512065122",
+            "StackId": "arn:aws:cloudformation:us-east-1:311640215412:stack/projectpico-vs-20190512065122/07a4c2b0-74bd-11e9-98d6-0e33f445a498"
+        }
+    }
+}

@@ -1,0 +1,118 @@
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa; }
+
+.copyright {
+  color: #999;
+  font-size: .9em;
+  text-align: right; }
+
+.signature {
+  color: #999;
+  font-size: .9em;
+  text-align: center; }
+
+.text-dark {
+  color: dark-text;
+  font-size: .9em; }
+
+.background-main {
+  color: #343a40 !important; }
+
+.background-color {
+  background-color: #ffffff; }
+
+.border-sides {
+  border: 1px ridge; }
+
+.row-header {
+  margin: 0px;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+  align-items: center; }
+
+.footer {
+  margin: 0px;
+  padding: 40px 0px; }
+
+.body-margin {
+  margin-top: 60px; }
+
+.jumbotron {
+  margin: 0px;
+  padding: 75px 30px;
+  border-bottom: 1px ridge; }
+
+.modal {
+  max-width: 100%; }
+  .modal .modal-dialog {
+    top: 15%; }
+
+.modal-header {
+  background-color: #343a40 !important;
+  color: floralwhite; }
+  .modal-header button {
+    color: floralwhite; }
+
+.modal-body, .modal-footer {
+  background-color: #fafafa; }
+
+.modal-format {
+  margin-left: 50px;
+  margin-right: 50px; }
+  .modal-format div {
+    margin-bottom: 10px; }
+
+.block {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+.card .card-title {
+  text-align: center; }
+
+.card .card-body {
+  text-align: center; }
+
+.card .card-title {
+  margin: 15px 2px; }
+
+.card .card-text {
+  margin: 0px 2px 15px 2px; }
+
+.card-deck {
+  margin-bottom: 25px; }
+
+.photo-size {
+  height: 400px;
+  margin-bottom: 25px;
+  overflow: hidden; }
+
+.carousel {
+  background: #343a40 !important; }
+  .carousel .carousel-item {
+    height: 320px; }
+    .carousel .carousel-item img {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      min-height: 320px; }
+    .carousel .carousel-item .carousel-caption {
+      position: absolute;
+      width: 500px;
+      top: 25%;
+      left: 39%; }
+
+#pauseButton {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+  outline: none; }
