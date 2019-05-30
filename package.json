@@ -1,0 +1,52 @@
+{
+  "name": "project-pico",
+  "version": "1.0.0",
+  "description": "Adventures of Pico",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "jshint": "jshint",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "concurrently \"npm run watch:scss\" \"npm run lite\"",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html &&  usemin photos.html -d dist --htmlmin -o dist/photos.html && usemin \"Pico's Picks.html\" -d dist --htmlmin -o dist/\"Pico's Picks.html\" && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasanthig/Project-Pico.git"
+  },
+  "author": "Michael Lewis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasanthig/Project-Pico/issues"
+  },
+  "homepage": "https://github.com/prasanthig/Project-Pico#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "jshint": "^2.10.2",
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.12.0",
+    "onchange": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "aws-amplify": "^1.1.27",
+    "bootstrap": "^4.3.1",
+    "bootstrap-social": "^5.1.1",
+    "copyfiles": "^2.1.0",
+    "imagemin": "^3.0.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
